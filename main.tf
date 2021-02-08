@@ -8,8 +8,7 @@ terraform {
 }
 # Configure the Datadog provider
 provider "datadog" {
-  api_key = "6"
-  app_key = "7"
+  api_url = "https://api.datadoghq.eu/
 }
 # Create a new monitor
 resource "datadog_monitor" "cpu_anomalous" {
